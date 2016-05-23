@@ -2,7 +2,7 @@
     "name": "vega-vscode",
     "displayName": "vega-vscode",
     "description": "Vega and Vega-Lite visualization grammars.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "kanitw",
     "engines": {
         "vscode": "^1.0.0"
@@ -15,23 +15,30 @@
     ],
     "main": "./out/src/extension",
     "contributes": {
-        "_commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
-        }],
-        "jsonValidation": [{
-            "fileMatch": "*.vg",
-            "url": "http://vega.github.io/vega/vega-schema.json"
-        },{
-            "fileMatch": "*.vg.json",
-            "url": "http://vega.github.io/vega/vega-schema.json"
-        },{
-            "fileMatch": "*.vl",
-            "url": "http://vega.github.io/vega-lite/vega-lite-schema.json"
-        },{
-            "fileMatch": "*.vl.json",
-            "url": "http://vega.github.io/vega-lite/vega-lite-schema.json"
-        }]
+        "_commands": [
+            {
+                "command": "extension.sayHello",
+                "title": "Hello World"
+            }
+        ],
+        "jsonValidation": [
+            {
+                "fileMatch": "*.vg",
+                "url": "http://vega.github.io/vega/vega-schema.json"
+            },
+            {
+                "fileMatch": "*.vg.json",
+                "url": "http://vega.github.io/vega/vega-schema.json"
+            },
+            {
+                "fileMatch": "*.vl",
+                "url": "http://vega.github.io/vega-lite/vega-lite-schema.json"
+            },
+            {
+                "fileMatch": "*.vl.json",
+                "url": "http://vega.github.io/vega-lite/vega-lite-schema.json"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
