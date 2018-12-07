@@ -1,5 +1,7 @@
 # Vega-VSCode
 
+**Deprecation notice: You don't need to use this plugin anymore. Just create Vega or Vega-Lite specs with a `$schema` property and a link to a schema in https://github.com/vega/schema and VSCode will support autocomplete and validation.**
+
 This is a Visual Studio Code plug-in for Vega and Vega-Lite visualization grammars.
 
 With this plugin, you can open a Vega specification file with `.vg` or `.vg.json` extension
